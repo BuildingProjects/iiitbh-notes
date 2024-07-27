@@ -51,7 +51,7 @@ function Hero() {
           
           
           <div class="flex justify-center buttonbox">
-            <a href="#learn"><button class="flex mx-auto assignment  inline-flex text-white border-0 py-2 px-6 focus:outline-2px btnslide rounded text-lg get_started_btn">Learn</button></a>
+            <a href="#learn"><button class="flex mx-auto assignment  inline-flex text-white border-0 py-2 px-6 focus:outline-2px btnslide rounded get_started_btn">Learn</button></a>
             
             <a href="#classNOtes"><button class="flex  mx-auto classnote text-gray-500 inline-flex  py-2 px-6  btnslide rightslide rounded colouredText">Notes</button></a>
             

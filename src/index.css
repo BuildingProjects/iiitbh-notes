@@ -1,8 +1,6 @@
 @tailwind base;
 @tailwind components;
-<<<<<<< HEAD
 @tailwind utilities;
-=======
 @tailwind utilities;
 
 *,
@@ -189,4 +187,3 @@ body {
 .swiper-pagination .swiper-pagination-bullet-active {
   background: var(--primary);
 }
->>>>>>> 3ca600bb3409e4936cd3b6041cc4c74ff46e69e7
