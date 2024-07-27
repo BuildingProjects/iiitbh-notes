@@ -1,14 +1,22 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+<<<<<<< HEAD
 import Hero from './components/Hero'
+=======
+import Header from './components/Header'
+import CodingSlide from './components/CodingSlide'
+>>>>>>> 3ca600bb3409e4936cd3b6041cc4c74ff46e69e7
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
+<<<<<<< HEAD
     <Hero/>
+=======
+    <>
+    <Header/>
+    <CodingSlide/>
+    </>
+>>>>>>> 3ca600bb3409e4936cd3b6041cc4c74ff46e69e7
   )
 }
 
