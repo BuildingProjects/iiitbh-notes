@@ -38,7 +38,7 @@ function Header() {
         }   
     ]
   return (
-    <div className='bg-indigo-700 flex items-center justify-between p-5'>
+    <div className='bg-[#6366F1] flex items-center justify-between p-5'>
         <div className='text-white flex gap-2 hover:'>
             <PiBooksDuotone className ='size-12 h-[4rem]'/>
             <h1 className='text-white font-bold text-[25px]'>IIITBH Notes</h1>

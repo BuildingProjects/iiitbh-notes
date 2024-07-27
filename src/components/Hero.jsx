@@ -8,11 +8,11 @@ function Hero() {
   return (
       <section className='text-gray-600 body-font header align-items center items-center font-bold'>
 
-      <div className="container mx-auto flex items-center px-5 py-24 flex-col md:flex-row">
+      <div className="container mx-auto flex px-5 py-24 flex-col md:flex-row items center">
       
       {/* div for image */}
 
-      <div className='lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0'>
+      <div className='lg:max-w-lg lg:w-1/2 md:w-1/2 w-5/6 mb-10 md:mb-0'>
 
       <img src={svg} alt="svg hero" className='object-cover object-center rounded device-width'/>
 
@@ -46,7 +46,7 @@ function Hero() {
 
 
         <p class="mb-8 leading-relaxed">
-        Welcome to IIIT BH's Study Hub! Elevate your learning experience with instant access to a treasure trove of downloadable notes, past year questions, and coding assistance. Whether you’re gearing up for exams or diving into a challenging project, our platform is designed to support your academic journey every step of the way. Explore, download, and conquer your coursework with confidence. Your success starts here! 
+        Welcome to IIIT's Study Hub! Elevate your learning experience with instant access to a treasure trove of downloadable notes, past year questions, and coding assistance. Whether you’re gearing up for exams or diving into a challenging project, our platform is designed to support your academic journey every step of the way. Explore, download, and conquer your coursework with confidence. Your success starts here! 
           </p>
           
           
