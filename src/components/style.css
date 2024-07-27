@@ -1,0 +1,60 @@
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+.buttonbox button {
+    margin: 20px 10px;
+}
+
+.get_started_btn {
+    background-color: #1877f2;
+    background-image: linear-gradient(62deg, #1877F2 0%, #E0C3FC 100%);
+    font-weight: 900;
+    border-radius: 5px;
+    transition: transform .3s, background-color .3s, color .3s;
+}
+
+
+.btnslide {
+    position: relative;
+    font-family: Roboto, serif;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 10px 30px;
+    margin: 0 20px;
+    color: #fff;
+    border: 2px solid #1877F2;
+    overflow: hidden;
+    transition: all .6s ease 0s;
+}
+
+.colouredText {
+    background-color: #1877f2;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: none;
+    font-weight: 900;
+    border-radius: 5px;
+    transition: transform .3s, background-color .3s, color .3s;
+}
+
+.typed-cursor.typed-cursor--blink {
+    /* animation: typedjsBlink 0.7s infinite; */
+    /* -webkit-animation: typedjsBlink 0.7s infinite; */
+    animation: typedjsBlink 0.7s infinite;
+}
+
+.typed-cursor {
+    opacity: 1;
+}
+
+.container span {
+    background: #1877F2;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: none;
+}
