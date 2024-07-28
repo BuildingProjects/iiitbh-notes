@@ -83,8 +83,8 @@ body {
 }
 
 .swiper-slide {
-  width: 37rem;
-  height: 42rem;
+  width: 370px;
+  height: 420px;
   position: relative;
 }
 
@@ -98,13 +98,13 @@ body {
   }
   .swiper-slide img {
     width: 28rem !important;
-    height: 36rem !important;
+    height: 20rem !important;
   }
 }
 
 .swiper-slide img {
   width: 37rem;
-  height: 42rem;
+  height: 20rem;
   border-radius: 2rem;
   object-fit: cover;
 }
