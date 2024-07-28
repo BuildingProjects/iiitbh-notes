@@ -53,8 +53,11 @@ a {
 }
 
 .container span {
-    background: #1877F2;
+    background: #6366f1;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     background-clip: none;
 }
+
+
+/* styling for upload section */

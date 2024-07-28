@@ -2,6 +2,9 @@ import './App.css'
 import Hero from './components/Hero'
 import Header from './components/Header'
 import CodingSlide from './components/CodingSlide'
+import UploadSection from './components/UploadSection'
+import Footer from './components/Footer'
+
 function App() {
 
   return (
@@ -9,6 +12,8 @@ function App() {
     <Header/>
     <Hero/>
     <CodingSlide/>
+    <UploadSection />
+    <Footer />
     </>
   )
 }
