@@ -8,11 +8,10 @@ import Lottie from 'lottie-react';
 function Hero() {
   return (
       <section className='text-gray-600 body-font header align-items center items-center font-bold'>
-
       <div className="container mx-auto flex px-5 py-24 flex-col md:flex-row items center">
       
       {/* div for image */}
-      <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 ml-[3.7rem] md:mb-0" data-aos="zoom-out-right" data-aos-easing="ease-out-cubic" data-aos-duration="1000" data-aos-delay="200">
+      <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 ml-[3.7rem] md:mb-0" data-aos="zoom-in" data-aos-easing="ease-out-cubic" data-aos-duration="1000" data-aos-delay="200">
       <Lottie loop={true} animationData={animation}/>
       </div>
 
