@@ -4,15 +4,17 @@ import Header from './components/Header'
 import CodingSlide from './components/CodingSlide'
 import UploadSection from './components/UploadSection'
 import Footer from './components/Footer'
+import AboutUs from './components/AboutUs'
 
 function App() {
 
   return (
     <>
     <Header/>
-    <Hero/>
+    {/* <Hero/>
     <CodingSlide/>
-    <UploadSection />
+    <UploadSection /> */}
+    <AboutUs />
     <Footer />
     </>
   )
