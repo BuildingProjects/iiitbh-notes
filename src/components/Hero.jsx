@@ -53,9 +53,6 @@ function Hero() {
           
           
       </div>
-
-
-
       </div>
       </section>
   )
