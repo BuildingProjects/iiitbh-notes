@@ -8,8 +8,7 @@ function MenuGrid({ items }) {
           key={index}
           className='bg-white rounded-md shadow-md p-4 hover:shadow-lg transition duration-300 ease-in-out'
         >
-          <h5 className='text-lg font-bold'>{item.label}</h5>
-          <p className='text-sm text-gray-600'>{item.description}</p>
+          <h5 className='text-lg font-bold text-black'>{item.label}</h5>
         </div>
       ))}
     </div>

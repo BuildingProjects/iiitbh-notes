@@ -5,12 +5,11 @@ function PopUp() {
   const [showModal, setShowModal] = useState(false);
   return (
     <div className='flex flex-col items-center gap-6 bg-indigo-800 text-white'>
-      <h1 className='text-5xl font-bold mt-4'>Popup Modal</h1>
       <button
         onClick={() => setShowModal(true)}
-        className='bg-violet-500 px-4 py-2 rounded-lg text-lg'
+        className='bg-[#6366F1] px-4 py-2 rounded-lg text-3xl mt-10 w-[240px] font-extrabold height-[100px]'
       >
-        Select Your Notes
+        Select Your Semester
       </button>
       {showModal && <Modal onClose={() => setShowModal(false)} />}
     </div>
