@@ -1,6 +1,6 @@
 import React from "react";
 import { IoClose } from "react-icons/io5";
-import MenuGrid from "./MenuGrid";
+import GridModal from "./GridModal";
 function Modal({ onClose }) {
   const items = [
     { label: "Item 1", description: "This is item 1" },
@@ -16,7 +16,7 @@ function Modal({ onClose }) {
         <button onClick={onClose} className="place-self-end">
           <IoClose size={30} />
         </button>
-        <div className="bg-indigo-600 rounded-xl px-20 py-10 flex flex-col gap-5 items-center mx-4 md:flex-row gap-20 h-auto">
+        <div className="  bg-indigo-600 rounded-xl px-20 py-10 flex flex-col gap-[100px] items-center mx-4 md:flex-row  h-auto">
           <div>
             <div className="flex flex-col justify-center items-center">
               <div className="mb-7">
@@ -64,7 +64,7 @@ function Modal({ onClose }) {
 
             <div className="flex flex-col justify-center items-center">
               <h2 className="text-3xl text font-extrabold py-5">Subjects</h2>
-              <MenuGrid items={items} />
+              <GridModal items={items} />
             </div>
           </div>
         </div>
