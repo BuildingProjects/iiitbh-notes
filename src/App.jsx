@@ -13,12 +13,12 @@ function App() {
     <>
       <Header />
       <Notes />
-      {/* <Hero />
+      {/* {/* <Hero /> */}
       <CodingSlide />
       <UploadSection />
       <AboutUs />
-      <ContactUs /> */}
-      <Footer />
+      <ContactUs />
+      {/* <Footer /> */}
     </>
   );
 }

@@ -1,0 +1,27 @@
+{
+  "name": "iiitbh-notes",
+  "version": "1.0.0",
+  "description": "notes for college students",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BuildingProjects/iiitbh-notes.git"
+  },
+  "author": "Roshan and Ankur",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BuildingProjects/iiitbh-notes/issues"
+  },
+  "homepage": "https://github.com/BuildingProjects/iiitbh-notes#readme",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "mongoose": "^8.5.1",
+    "nodemon": "^3.1.4"
+  }
+}

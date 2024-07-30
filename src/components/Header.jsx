@@ -38,7 +38,7 @@ function Header() {
     },
   ];
   return (
-    <div className='bg-[#6366F1] flex items-center justify-between p-5'>
+    <div className={`bg-[#6366F1] flex items-center justify-between p-5`}>
       <div className='text-white flex gap-2 hover:'>
         <PiBooksDuotone className='size-12 h-[4rem]' />
         <h1 className='text-white font-bold text-[25px]'>IIITBH NOTES</h1>
@@ -48,7 +48,6 @@ function Header() {
           <HeaderItem name={item.name} Icon={item.icon} />
         ))}
       </div>
-
       {/* responsive */}
       <div className='flex md:hidden items-center gap-5 mt-[9px]'>
         {menu.map(
