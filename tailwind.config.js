@@ -23,9 +23,11 @@ export default {
             borderRadius: "20px",
             border: "none",
           },
+          
         },
       };
       addUtilities(newUltilities, ["responsive", "hover"]);
     },
+    require('tailwind-scrollbar'),
   ],
 };
