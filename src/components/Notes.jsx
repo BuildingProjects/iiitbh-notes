@@ -24,7 +24,9 @@ function Notes() {
     <>
       <div className='bg-indigo-800 flex-col items-center '>
         <div>
-          <PopUp />
+          <div className='pt-4'>
+            <PopUp />
+          </div>
         </div>
         <div className='flex justify-center'>
           <div className='w-[70%] flex-col gap-8'>

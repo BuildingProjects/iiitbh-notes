@@ -6,7 +6,7 @@ import UploadSection from "./components/UploadSection";
 import Footer from "./components/Footer";
 import ContactUs from "./components/ContactUs";
 import AboutUs from "./components/AboutUs";
-import Notes from "./Notes";
+import Notes from "./components/Notes";
 
 function App() {
   return (
