@@ -1,8 +1,30 @@
 import React, { useState } from "react";
 import Modal from "./Modal";
 
-function PopUp() {
+function PopUp({ onDataSelect}) {
   const [showModal, setShowModal] = useState(false);
+  const [semester, setSemester] = useState("");
+  const [branch, setBranch] = useState("");
+  const [subject, setSubject] = useState("");
+
+  const handleSemesterSelect = (semester) => {
+    setSemester(semester);
+  };
+
+  const handleBranchSelect = (branch) => {
+    setBranch(branch);
+  };
+
+  const handleSubjectSelect = (subject) => {
+    setSubject(subject);
+  };
+
+  const handleClose = () => {
+    setShowModal(false);
+    onDataSelect({ semester, branch, subject });
+  };
+
+
   return (
     <div className='flex flex-col items-center gap-6 bg-indigo-800 text-white'>
       <button
@@ -11,7 +33,12 @@ function PopUp() {
       >
         Select Your Semester
       </button>
-      {showModal && <Modal onClose={() => setShowModal(false)} />}
+      {showModal &&
+       <Modal
+        onClose={handleClose}
+        onSemesterSelect={handleSemesterSelect}
+        onBranchSelect={handleBranchSelect}
+        onSubjectSelect={handleSubjectSelect} />}
     </div>
   );
 }
