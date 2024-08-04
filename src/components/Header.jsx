@@ -49,10 +49,15 @@ function Header() {
         ))}
       </div>
       <div className='flex md:hidden items-center gap-5 mt-[9px]'>
-        {menu.map(
+        {/* {menu.map(
           (item, index) =>
             index < 1 && <HeaderItem name={""} Icon={item.icon} />
-        )}
+        )} */}
+        <div className='text-white flex items-center gap-3 text-[18px] font-semibold cursor-pointer hover:underline underline-offset-8 mb-3'>
+          <a href='/'>
+            <HiHome />
+          </a>
+        </div>
         <div className='md:hidden' onClick={() => setToggle(!toggle)}>
           <HeaderItem name='' Icon={HiDotsVertical} />
           {toggle ? (
