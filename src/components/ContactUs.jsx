@@ -16,7 +16,7 @@ function ContactUs() {
       message: message,
     };
     const baseUrl = "http://localhost:8000";
-    const res = await fetch(`${baseUrl}/Contact`, {
+    const res = await fetch(`${baseUrl}/Contact/sendEmail`, {
       method: "POST",
       body: JSON.stringify(dataSend),
       headers: {
