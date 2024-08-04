@@ -23,7 +23,7 @@ function App() {
           <Route path='/PYQ' element={<Notes />} />
         </Routes>
         <Footer />
-      </BrowserRouter>``
+      </BrowserRouter>
     </>
   );
 }
