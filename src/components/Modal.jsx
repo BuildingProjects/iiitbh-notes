@@ -6,28 +6,17 @@ import GridModal from "./GridModal";
 import LoadingAnimation from "../assets/LoadingAnimation.json";
 import Lottie from "lottie-react";
 
-function Modal({ onClose }) {
+function Modal({ onClose , onSemesterSelect , onBranchSelect , onSubjectSelect, }) {
   const [select, setSelect] = useState(true);
   const [semester, setSemester] = useState("");
   const [branch, setBranch] = useState("");
-  const [pdfs, setPdfs] = useState([]);
+  const [subject, setSubject] = useState("");
   const [folders, setFolders] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
   const [check1, setCheck1] = useState(false);
   const [check2, setCheck2] = useState(false);
 
-  const fetchPdfsFromFirebase = async (semester, branch) => {
-    const pdfsRef = ref(storage, `pdfs/${semester}/${branch}`);
-    const pdfsList = await listAll(pdfsRef);
-    const pdfsArray = await Promise.all(
-      pdfsList.items.map(async (item) => {
-        const pdfRef = ref(storage, item.fullPath);
-        const pdfLink = await getDownloadURL(pdfRef);
-        return { name: item.name, link: pdfLink };
-      })
-    );
-    setPdfs(pdfsArray);
-  };
+
 
   const listFolderNames = async (semester, branch) => {
     setIsLoading(true);
@@ -47,12 +36,19 @@ function Modal({ onClose }) {
   const handleSemesterChange = (e) => {
     setCheck2(true);
     setSemester(e.target.value);
+    onSemesterSelect(e.target.value);
   };
 
   const handleBranchChange = (e) => {
     setCheck1(true);
     setBranch(e.target.value);
     setComingSoon(false);
+    onBranchSelect(e.target.value);
+  };
+
+  const handleSubjectSelect = (subject) => {
+    setSubject(subject);
+    onSubjectSelect(subject);
   };
 
   const [comingSoon, setComingSoon] = useState(false);
@@ -166,7 +162,8 @@ function Modal({ onClose }) {
                   <div className='flex flex-col justify-center items-center mt-5'>
                     <GridModal
                       items={folders}
-                      onSelect={() => {
+                      onSelect={(subject) => {
+                        handleSubjectSelect(subject);
                         setSelect(false);
                         onClose();
                       }}
