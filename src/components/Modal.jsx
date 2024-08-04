@@ -28,7 +28,6 @@ function Modal({ onClose , onSemesterSelect , onBranchSelect , onSubjectSelect, 
         folders.push(folderRef.name);
       });
     });
-
     setFolders(folders);
     setIsLoading(false);
   };

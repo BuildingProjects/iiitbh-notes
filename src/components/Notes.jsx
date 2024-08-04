@@ -4,30 +4,21 @@ import HorizontalScrollMenu from "./HorizontalScrollMenu";
 import MenuGrid from "./MenuGrid";
 import storage from "../config/firebase";
 import { ref, listAll, getDownloadURL, list } from "firebase/storage";
+import LoadingAnimation from "../assets/LoadingAnimation.json";
+import Lottie from "lottie-react";
 
 function Notes() {
   const [pdfs, setPdfs] = useState([]);
   const [type, setType] = useState("");
   const [selectedData, setSelectedData] = useState({});
-  const items1 = [
-    { label: "Item 1", description: "This is item 1" },
-    { label: "Item 2", description: "This is item 2" },
-    { label: "Item 3", description: "This is item 3" },
-    { label: "Item 4", description: "This is item 4" },
-    { label: "Item 5", description: "This is item 5" },
-    { label: "Item 6", description: "This is item 6" },
-  ];
-  const items = [
-    { label: "Item 1", description: "This is item 1" },
-    { label: "Item 2", description: "This is item 2" },
-    { label: "Item 3", description: "This is item 3" },
-    { label: "Item 4", description: "This is item 4" },
-    { label: "Item 5", description: "This is item 5" },
-    { label: "Item 6", description: "This is item 6" },
-  ];
-
+  const [isLoading, setIsLoading] = useState(false);
+  const items = [];
   const fetchPdfsFromFirebase = async (semester, branch, subject, type) => {
-    const pdfsRef = ref(storage, `pdfs/${semester}/${branch}/${subject}/${type}`);
+    setIsLoading(true);
+    const pdfsRef = ref(
+      storage,
+      `pdfs/${semester}/${branch}/${subject}/${type}`
+    );
     const pdfsList = await listAll(pdfsRef);
     const pdfsArray = await Promise.all(
       pdfsList.items.map(async (item) => {
@@ -37,6 +28,7 @@ function Notes() {
       })
     );
     setPdfs(pdfsArray);
+    setIsLoading(false);
   };
 
   const handleDataSelect = (data) => {
@@ -45,25 +37,40 @@ function Notes() {
 
   const handleTypeSelect = (selectedType) => {
     setType(selectedType);
-    fetchPdfsFromFirebase(selectedData.semester , selectedData.branch , selectedData.subject , type);
+    fetchPdfsFromFirebase(
+      selectedData.semester,
+      selectedData.branch,
+      selectedData.subject,
+      type
+    );
   };
-  
+
   return (
     <>
       <div className='bg-indigo-800 flex-col items-center '>
         <div>
           <div className='pt-4'>
-            <PopUp onDataSelect={handleDataSelect}/>
+            <PopUp onDataSelect={handleDataSelect} />
           </div>
         </div>
         <div className='flex justify-center'>
           <div className='w-[70%] flex-col gap-8'>
             <div>
-              <HorizontalScrollMenu items={items} onSelect={handleTypeSelect}/>
+              <HorizontalScrollMenu items={items} onSelect={handleTypeSelect} />
             </div>
-            <div className='mb-5 mt-7'>
-              <MenuGrid items={pdfs} />
-            </div>
+            {isLoading ? (
+              <div className='flex justify-center items-center'>
+                <Lottie
+                  className='w-[30rem]'
+                  loop={true}
+                  animationData={LoadingAnimation}
+                />
+              </div>
+            ) : (
+              <div className='mb-5 mt-7'>
+                <MenuGrid items={pdfs} />
+              </div>
+            )}
           </div>
         </div>
       </div>

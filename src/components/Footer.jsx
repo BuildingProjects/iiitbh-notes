@@ -13,9 +13,11 @@ function Footer() {
               <a href='#home' class='flex items-center'>
                 <div className='text-white flex gap-2 hover:'>
                   <PiBooksDuotone className='size-12 h-[4rem]' />
-                  <span class='self-center text-4xl font-semibold whitespace-nowrap dark:text-white'>
-                    IIITBH NOTES
-                  </span>
+                  <a href='/'>
+                    <span class='self-center text-4xl font-semibold whitespace-nowrap dark:text-white'>
+                      IIITBH NOTES
+                    </span>
+                  </a>
                 </div>
               </a>
             </div>
@@ -31,8 +33,8 @@ function Footer() {
                     </a>
                   </li>
                   <li>
-                    <a href='/Notes' class='hover:underline'>
-                      Books
+                    <a href='/Coding' class='hover:underline'>
+                      Coding
                     </a>
                   </li>
                 </ul>
