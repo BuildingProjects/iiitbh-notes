@@ -45,9 +45,9 @@ function Hero() {
           
           
           <div className="flex justify-center buttonbox">
-            <a href="#learn"><button className="flex mx-auto assignment  inline-flex text-white border-0 py-2 px-6 focus:outline-2px btnslide rounded get_started_btn">Learn</button></a>
+            <a href="/Coding"><button className="flex mx-auto assignment  inline-flex text-white border-0 py-2 px-6 focus:outline-2px btnslide rounded get_started_btn">Learn</button></a>
             
-            <a href="#classNotes"><button className="flex  mx-auto classnote text-gray-500 inline-flex  py-2 px-6  btnslide rightslide rounded colouredText">Notes</button></a>
+            <a href="/Notes"><button className="flex  mx-auto classnote text-gray-500 inline-flex  py-2 px-6  btnslide rightslide rounded colouredText">Notes</button></a>
             
           </div>
           

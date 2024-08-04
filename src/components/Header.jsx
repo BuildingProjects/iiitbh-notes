@@ -48,7 +48,6 @@ function Header() {
           <HeaderItem name={item.name} Icon={item.icon} />
         ))}
       </div>
-      {/* responsive */}
       <div className='flex md:hidden items-center gap-5 mt-[9px]'>
         {menu.map(
           (item, index) =>
@@ -57,10 +56,10 @@ function Header() {
         <div className='md:hidden' onClick={() => setToggle(!toggle)}>
           <HeaderItem name='' Icon={HiDotsVertical} />
           {toggle ? (
-            <div className='absolute mt-3 bg-indigo-800 border-[1px] px-5 py-4 left-[15.5rem]'>
+            <div className='absolute mt-3 bg-indigo-800 border border-indigo-700 p-4 w-48 md:w-64 right-4 md:right-6 z-[1]'>
               {menu.map(
                 (item, index) =>
-                  index > 1 && <HeaderItem name={item.name} Icon={item.icon} />
+                  index >= 1 && <HeaderItem name={item.name} Icon={item.icon} />
               )}
             </div>
           ) : null}
@@ -69,5 +68,4 @@ function Header() {
     </div>
   );
 }
-
 export default Header;
