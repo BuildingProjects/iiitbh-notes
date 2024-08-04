@@ -1,19 +1,51 @@
 import Lottie from "lottie-react";
-import React from "react";
+import React, { useState } from "react";
 import contactAnimation from "../assets/ContactAnimation.json";
 import FollowUs from "./FollowUs";
+import axios from "axios";
+
 function ContactUs() {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+
+  const sendEmail = async () => {
+    let dataSend = {
+      name: name,
+      email: email,
+      message: message,
+    };
+    const baseUrl = "http://localhost:8000";
+    const res = await fetch(`${baseUrl}/Contact`, {
+      method: "POST",
+      body: JSON.stringify(dataSend),
+      headers: {
+        Accept: "application/json",
+        "Content-Type": "application/json",
+      },
+    })
+      // HANDLING ERRORS
+      .then((res) => {
+        console.log(res);
+        if (res.status > 199 && res.status < 300) {
+          alert("Send Successfully !");
+        }
+      });
+  };
+
   return (
     <>
       <div className='bg-white flex justify-center flex-wrap-reverse sm:flex-wrap-reverse md:flex-nowrap lg:flex-nowrap xl:flex-nowrap mt-7 mb-11 p-11'>
-        {/* <div className='flex-col items-center justice-center w-[27rem]'> */}
         <div className='flex-col items-center justice-center w-[27rem] sm:w-[50rem]  md:70rem'>
           <div className='flex items-center justify-center'>
             <h2 className='items-center text-[#6366F1] font-bold text-7xl m-6 pb-6'>
               Contact Us
             </h2>
           </div>
-          <form className='lg:w-[35rem] sm:w-[100%] mx-auto'>
+          <form
+            onSubmit={sendEmail}
+            className='lg:w-[35rem] sm:w-[100%] mx-auto'
+          >
             <div className='mb-5'>
               <label
                 for='text'
@@ -27,6 +59,8 @@ function ContactUs() {
                 className='shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light'
                 placeholder='Enter Your Name'
                 required
+                value={name}
+                onChange={(e) => setName(e.target.value)}
               />
             </div>
             <div className='mb-5'>
@@ -42,6 +76,8 @@ function ContactUs() {
                 className='shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light'
                 placeholder='name@flowbite.com'
                 required
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
               />
             </div>
             <div className='mb-5'>
@@ -56,6 +92,8 @@ function ContactUs() {
                 rows='4'
                 class='block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500'
                 placeholder='Leave a comment...'
+                value={message}
+                onChange={(e) => setMessage(e.target.value)}
               ></textarea>
             </div>
             <div className='flex items-center mb-5'>
