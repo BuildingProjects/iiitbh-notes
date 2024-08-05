@@ -17,11 +17,12 @@ function PopUp({ onDataSelect }) {
 
   const handleSubjectSelect = (subject) => {
     setSubject(subject);
+    console.log(subject);
+    onDataSelect({ semester, branch, subject });
   };
 
   const handleClose = () => {
     setShowModal(false);
-    onDataSelect({ semester, branch, subject });
   };
 
   return (

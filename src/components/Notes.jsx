@@ -41,7 +41,7 @@ function Notes() {
       selectedData.semester,
       selectedData.branch,
       selectedData.subject,
-      type
+      selectedType
     );
   };
 

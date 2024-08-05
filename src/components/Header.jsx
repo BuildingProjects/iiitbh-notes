@@ -44,8 +44,8 @@ function Header() {
         <h1 className='text-white font-bold text-[25px]'>IIITBH NOTES</h1>
       </div>
       <div className='hidden md:flex gap-8'>
-        {menu.map((item) => (
-          <HeaderItem name={item.name} Icon={item.icon} />
+        {menu.map((item, index) => (
+          <HeaderItem key={index} name={item.name} Icon={item.icon} />
         ))}
       </div>
       <div className='flex md:hidden items-center gap-5 mt-[9px]'>
@@ -64,7 +64,9 @@ function Header() {
             <div className='absolute mt-3 bg-indigo-800 border border-indigo-700 p-4 w-48 md:w-64 right-4 md:right-6 z-[1]'>
               {menu.map(
                 (item, index) =>
-                  index >= 1 && <HeaderItem name={item.name} Icon={item.icon} />
+                  index >= 1 && (
+                    <HeaderItem key={index} name={item.name} Icon={item.icon} />
+                  )
               )}
             </div>
           ) : null}
