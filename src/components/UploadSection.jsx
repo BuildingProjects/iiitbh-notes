@@ -16,7 +16,7 @@ function UploadSection() {
             <p className='text-gray-400 items-center text-wrap leading-relaxed justify-center text-center mt-10 mb-10'>Hey students! Do you have well-organized notes that could help your peers succeed? Share your valuable insights and contribute to our college notes website! By uploading your notes, you’re not just helping others—you're building a collaborative learning environment. Your contributions can make a big difference in someone’s academic journey. Thank you for being a part of this amazing community! 📚✨</p>
 
 
-            <a href="#upload">
+            <a href="https://forms.gle/oGi2uW44edGr8RSz7" target='_blank'>
                 <button className="mx-auto assignment  inline-flex text-white border-0 py-2 px-6 focus:outline-2px btnslide rounded get_started_btn">Upload</button>
             </a>
 

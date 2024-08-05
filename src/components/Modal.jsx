@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect , forwardRef} from "react";
 import storage from "../config/firebase";
-import { ref, listAll, getDownloadURL, list } from "firebase/storage";
+import { ref, list } from "firebase/storage";
 import { IoClose } from "react-icons/io5";
 import GridModal from "./GridModal";
 import LoadingAnimation from "../assets/LoadingAnimation.json";
@@ -28,6 +28,7 @@ function Modal({ onClose , onSemesterSelect , onBranchSelect , onSubjectSelect, 
         folders.push(folderRef.name);
       });
     });
+
     setFolders(folders);
     setIsLoading(false);
   };
