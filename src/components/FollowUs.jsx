@@ -71,7 +71,7 @@ const FollowUs = () => {
               behind-the-scenes peeks!
             </p>
             <a
-              href='https://www.instagram.com/roshan.029/'
+              href='https://www.instagram.com/iiitbh_notes/'
               target='_blank'
               className='bg-pink-500 hover:bg-pink-700 text-white font-bold py-2 px-4 rounded'
             >
@@ -140,7 +140,7 @@ const FollowUs = () => {
               conversation!
             </p>
             <a
-              href='https://twitter.com/your-twitter-handle'
+              href='https://t.me/+8EGaWV-IdekwYjk9'
               target='_blank'
               className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded'
             >
