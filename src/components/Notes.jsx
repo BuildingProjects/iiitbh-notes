@@ -8,7 +8,7 @@ import LoadingAnimation from "../assets/LoadingAnimation.json";
 import Lottie from "lottie-react";
 
 function Notes() {
-  // const [showLottie , setShowLottie] = useState(true);
+  const [showLottie , setShowLottie] = useState(true);
   const [pdfs, setPdfs] = useState([]);
   const [type, setType] = useState("");
   const [selectedData, setSelectedData] = useState({});
@@ -34,7 +34,7 @@ function Notes() {
 
   const handleDataSelect = (data) => {
     setSelectedData(data);
-    // console.log(showLottie);
+    console.log(showLottie);
     // setShowLottie(false);
   };
 
@@ -54,8 +54,8 @@ function Notes() {
     <>
       <div className='bg-indigo-800 flex-col items-center h-screen'>
         <div>
-          <div className='pt-4'>
-            <PopUp  onDataSelect={handleDataSelect} />
+          <div className='pt-4' onClick={() => setShowLottie(false)}>
+            <PopUp onDataSelect={handleDataSelect} />
           </div>
         </div>
         <div className='flex justify-center'>
@@ -74,7 +74,7 @@ function Notes() {
             ) : (
               
               
-                // showLottie && 
+                showLottie && 
                 ((type === "") || (Object.keys(selectedData).length === 0))
 
                 ? (
@@ -82,13 +82,13 @@ function Notes() {
                     <p className="pl-10 text-white text-4xl font-bold">
                       Please Make your Selections
                     </p>
-                    {/* <div>
+                    <div>
                 <Lottie
                   className='sm:w-[300px] md:w-[300px]'
                   loop={true}
                   animationData={LoadingAnimation}
                 /> 
-                </div> */}
+                </div>
                 </div>)
                 :
                   (
