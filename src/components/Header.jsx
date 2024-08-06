@@ -38,10 +38,14 @@ function Header() {
     },
   ];
   return (
-    <div className={`bg-[#6366F1] flex items-center justify-between p-5`}>
+    <div
+      className={`bg-[#6366F1] flex items-center justify-between p-5 sticky top-0 z-50`}
+    >
       <div className='text-white flex gap-2 hover:'>
         <PiBooksDuotone className='size-12 h-[4rem]' />
-        <h1 className='text-white font-bold text-[25px]'>IIITBH NOTES</h1>
+        <a href='/'>
+          <h1 className='text-white font-bold text-[25px]'>IIITBH NOTES</h1>
+        </a>
       </div>
       <div className='hidden md:flex gap-8'>
         {menu.map((item, index) => (

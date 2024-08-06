@@ -48,6 +48,7 @@ function Footer() {
                     <a
                       href="https://github.com/BuildingProjects/iiitbh-notes"
                       className="hover:underline"
+                      target="_blank"
                     >
                       GitHub
                     </a>
@@ -56,6 +57,7 @@ function Footer() {
                     <a
                       href="https://www.linkedin.com/in/roshan2003/"
                       className="hover:underline"
+                      target="_blank"
                     >
                       Telegram
                     </a>
