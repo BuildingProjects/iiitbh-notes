@@ -6,7 +6,9 @@ function MenuGrid({ items }) {
       {items.map((item, index) => (
         <a href={item.link} target='_blank' key={index}>
           <div className='bg-white rounded-md shadow-md p-4 hover:shadow-lg transition duration-300 ease-in-out'>
-            <h5 className='text-[1.5rem] font-bold text-black uppercase text-center'>{item.name.replace(/\.[^/.]+$/, "")}</h5>
+            <h5 className='text-[1.5rem] font-bold text-black uppercase text-center'>
+              {item.name.replace(/\.[^/.]+$/, "")}
+            </h5>
           </div>
         </a>
       ))}
