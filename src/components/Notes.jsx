@@ -8,9 +8,9 @@ import LoadingAnimation from "../assets/LoadingAnimation.json";
 import Lottie from "lottie-react";
 
 function Notes() {
-  const [showLottie , setShowLottie] = useState(true);
+  const [showLottie, setShowLottie] = useState(true);
   const [pdfs, setPdfs] = useState([]);
-  const [type, setType] = useState("");
+  const [type, setType] = useState("Notes");
   const [selectedData, setSelectedData] = useState({});
   const [isLoading, setIsLoading] = useState(false);
   const items = [];
@@ -34,8 +34,7 @@ function Notes() {
 
   const handleDataSelect = (data) => {
     setSelectedData(data);
-    console.log(showLottie);
-    // setShowLottie(false);
+    fetchPdfsFromFirebase(data.semester, data.branch, data.subject, type);
   };
 
   const handleTypeSelect = (selectedType) => {
@@ -47,8 +46,6 @@ function Notes() {
       selectedType
     );
   };
-
-  
 
   return (
     <>
@@ -71,33 +68,24 @@ function Notes() {
                   animationData={LoadingAnimation}
                 />
               </div>
-            ) : (
-              
-              
-                showLottie && 
-                ((type === "") || (Object.keys(selectedData).length === 0))
-
-                ? (
-                  <div className="flex justify-center items-center mt-14 flex-col">
-                    <p className="pl-10 text-white text-4xl font-bold">
-                      Please Make your Selections
-                    </p>
-                    <div>
-                <Lottie
-                  className='sm:w-[300px] md:w-[300px]'
-                  loop={true}
-                  animationData={LoadingAnimation}
-                /> 
+            ) : showLottie &&
+              (type === "" || Object.keys(selectedData).length === 0) ? (
+              <div className='flex justify-center items-center mt-14 flex-col'>
+                <p className='pl-10 text-white text-4xl font-bold'>
+                  Please Make your Selections
+                </p>
+                <div>
+                  <Lottie
+                    className='sm:w-[300px] md:w-[300px]'
+                    loop={true}
+                    animationData={LoadingAnimation}
+                  />
                 </div>
-                </div>)
-                :
-                  (
-                    <div className='mb-5 mt-7'>
-                      <MenuGrid items={pdfs} />
-                    </div>
-                  )
-              
-              
+              </div>
+            ) : (
+              <div className='mb-5 mt-7'>
+                <MenuGrid items={pdfs} />
+              </div>
             )}
           </div>
         </div>
