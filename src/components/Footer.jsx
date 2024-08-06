@@ -88,14 +88,16 @@ function Footer() {
           </div>
           <hr className='my-6 border-white sm:mx-auto lg:my-8' />
           <div className='sm:flex sm:items-center  sm:justify-between '>
-            <span className='text-2xl text-white sm:text-center'>
-              ©{currentYear}{" "}
-              <a href='/' className='hover:underline'>
-                IIITBH NOTES™
-              </a>
-              . All Rights Reserved.
-            </span>
-            <div className='flex mt-4 sm:justify-center sm:mt-0 '>
+            <div className='flex justify-center'>
+              <span className='text-2xl text-white sm:text-center'>
+                ©{currentYear}{" "}
+                <a href='/' className='hover:underline'>
+                  IIITBH NOTES™
+                </a>
+                . All Rights Reserved.
+              </span>
+            </div>
+            <div className='flex mt-4 justify-center gap-5'>
               <a
                 href='https://www.instagram.com/iiitbh_notes/'
                 className='text-white hover:text-gray-900  ms-5'
@@ -140,11 +142,13 @@ function Footer() {
               </a>
             </div>
           </div>
-          <a href='/About'>
-            <div className='sm:text-center flex flex-col justify-center text-left text-white font-extrabold text-4xl pt-5 hover:text-gray-900 ms-5'>
-              Made By : Ankur & Roshan
-            </div>
-          </a>
+          <div className='flex justify-center'>
+            <a href='/About'>
+              <div className='sm:text-center flex flex-col justify-center text-left text-white font-extrabold text-4xl pt-5 hover:text-gray-900 ms-5'>
+                Made By : Ankur & Roshan
+              </div>
+            </a>
+          </div>
         </div>
       </footer>
     </div>
