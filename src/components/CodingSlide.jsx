@@ -109,9 +109,7 @@ function CodingSlide() {
                 <hr />
                 <br />
                 <p className='leading-relaxed mb-3'>
-                  C is a powerful and versatile programming language that can be
-                  used to develop a wide variety of software. It is a good
-                  choice for beginners.
+                C++ is a high-performance language combining C's efficiency with object-oriented features. It supports both procedural and object-oriented programming. 
                 </p>
                 <div className='flex items-center flex-wrap'>
                   <a
@@ -150,9 +148,7 @@ function CodingSlide() {
                 <hr />
                 <br />
                 <p className='leading-relaxed mb-3'>
-                  C is a powerful and versatile programming language that can be
-                  used to develop a wide variety of software. It is a good
-                  choice for beginners.
+                Arrays are data structures that store a fixed-size sequence of elements of the same type. They allow efficient indexing and are used for grouping related data.
                 </p>
                 <div className='flex items-center flex-wrap'>
                   <a
@@ -191,9 +187,7 @@ function CodingSlide() {
                 <hr />
                 <br />
                 <p className='leading-relaxed mb-3'>
-                  C is a powerful and versatile programming language that can be
-                  used to develop a wide variety of software. It is a good
-                  choice for beginners.
+                Web development involves building and maintaining websites and web apps, using technologies like HTML, CSS, JavaScript, and server-side languages.
                 </p>
                 <div className='flex items-center flex-wrap'>
                   <a
@@ -232,9 +226,7 @@ function CodingSlide() {
                 <hr />
                 <br />
                 <p className='leading-relaxed mb-3'>
-                  C is a powerful and versatile programming language that can be
-                  used to develop a wide variety of software. It is a good
-                  choice for beginners.
+                A graph is a data structure consisting of nodes (vertices) connected by edges. It's used to model relationships and networks, such as social connections or pathways.
                 </p>
                 <div className='flex items-center flex-wrap'>
                   <a
@@ -273,9 +265,7 @@ function CodingSlide() {
                 <hr />
                 <br />
                 <p className='leading-relaxed mb-3'>
-                  C is a powerful and versatile programming language that can be
-                  used to develop a wide variety of software. It is a good
-                  choice for beginners.
+                Python is a high-level, versatile language known for its readability and ease of use, widely used in web development, data analysis, and automation.
                 </p>
                 <div className='flex items-center flex-wrap'>
                   <a
@@ -314,9 +304,7 @@ function CodingSlide() {
                 <hr />
                 <br />
                 <p className='leading-relaxed mb-3'>
-                  C is a powerful and versatile programming language that can be
-                  used to develop a wide variety of software. It is a good
-                  choice for beginners.
+                Java is a high-level, object-oriented language known for its portability and use in web applications, enterprise software, and Android development.
                 </p>
                 <div className='flex items-center flex-wrap gap-3 mt-3'>
                   <a
