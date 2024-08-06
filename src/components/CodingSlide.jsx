@@ -54,7 +54,7 @@ function CodingSlide() {
           >
             <div className='h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden Free_course_card'
             >
-              <a href='https://www.youtube.com/watch?v=irqbmMNs2Bo'>
+              <a href='https://www.youtube.com/watch?v=irqbmMNs2Bo' target="_blank">
                 <img
                   className='lg:h-48 md:h-36 w-full object-cover object-center fitImg'
                   src='https://i3.ytimg.com/vi/irqbmMNs2Bo/maxresdefault.jpg'
@@ -76,6 +76,7 @@ function CodingSlide() {
                   <a
                     href='https://www.youtube.com/watch?v=irqbmMNs2Bo'
                     className='text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0'
+                    target="_blank"
                   >
                     <div className="flex gap-1">
                     <p>Learn More</p>
@@ -95,7 +96,7 @@ function CodingSlide() {
             data-aos-delay='10'
           >
             <div className='h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden Free_course_card'>
-              <a href='https://www.youtube.com/watch?v=EAR7De6Goz4'>
+              <a href='https://www.youtube.com/watch?v=EAR7De6Goz4' target="_blank">
                 <img
                   className='lg:h-48 md:h-36 w-full object-cover object-center fitImg'
                   src='https://i3.ytimg.com/vi/EAR7De6Goz4/maxresdefault.jpg'
@@ -115,6 +116,7 @@ function CodingSlide() {
                   <a
                     href='https://www.youtube.com/watch?v=EAR7De6Goz4'
                     className='text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0'
+                    target="_blank"
                   >
                     <div className="flex gap-1">
                     <p>Learn More</p>
@@ -134,7 +136,7 @@ function CodingSlide() {
             data-aos-delay='10'
           >
             <div className='h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden Free_course_card'>
-              <a href='https://www.youtube.com/watch?v=37E9ckMDdTk&list=PLgUwDviBIf0rENwdL0nEH0uGom9no0nyB'>
+              <a href='https://www.youtube.com/watch?v=37E9ckMDdTk&list=PLgUwDviBIf0rENwdL0nEH0uGom9no0nyB' target="_blank">
                 <img
                   className='lg:h-48 md:h-36 w-full object-cover object-center fitImg'
                   src='https://i3.ytimg.com/vi/37E9ckMDdTk/maxresdefault.jpg'
@@ -154,6 +156,7 @@ function CodingSlide() {
                   <a
                     href='https://www.youtube.com/watch?v=37E9ckMDdTk&list=PLgUwDviBIf0rENwdL0nEH0uGom9no0nyB'
                     className='text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0'
+                    target="_blank"
                   >
                     <div className="flex gap-1">
                     <p>Learn More</p>
@@ -173,7 +176,7 @@ function CodingSlide() {
             data-aos-delay='10'
           >
             <div className='h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden Free_course_card'>
-              <a href='https://www.youtube.com/watch?v=tVzUXW6siu0&list=PLu0W_9lII9agq5TrH9XLIKQvv0iaF2X3w'>
+              <a href='https://www.youtube.com/watch?v=tVzUXW6siu0&list=PLu0W_9lII9agq5TrH9XLIKQvv0iaF2X3w' target="_blank">
                 <img
                   className='lg:h-48 md:h-36 w-full object-cover object-center fitImg'
                   src='https://i3.ytimg.com/vi/tVzUXW6siu0/maxresdefault.jpg'
@@ -193,6 +196,7 @@ function CodingSlide() {
                   <a
                     href='https://www.youtube.com/watch?v=tVzUXW6siu0&list=PLu0W_9lII9agq5TrH9XLIKQvv0iaF2X3w'
                     className='text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0'
+                    target="_blank"
                   >
                     <div className="flex gap-1">
                     <p>Learn More</p>
@@ -212,7 +216,7 @@ function CodingSlide() {
             data-aos-delay='10'
           >
             <div className='h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden Free_course_card'>
-              <a href='https://www.youtube.com/watch?v=M3_pLsDdeuU&list=PLgUwDviBIf0oE3gA41TKO2H5bHpPd7fzn'>
+              <a href='https://www.youtube.com/watch?v=M3_pLsDdeuU&list=PLgUwDviBIf0oE3gA41TKO2H5bHpPd7fzn' target="_blank">
                 <img
                   className='lg:h-48 md:h-36 w-full object-cover object-center fitImg'
                   src='https://i3.ytimg.com/vi/M3_pLsDdeuU/maxresdefault.jpg'
@@ -232,6 +236,7 @@ function CodingSlide() {
                   <a
                     href='https://www.youtube.com/watch?v=M3_pLsDdeuU&list=PLgUwDviBIf0oE3gA41TKO2H5bHpPd7fzn'
                     className='text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0'
+                    target="_blank"
                   >
                    <div className="flex gap-1">
                     <p>Learn More</p>
@@ -251,7 +256,7 @@ function CodingSlide() {
             data-aos-delay='10'
           >
             <div className='h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden Free_course_card'>
-              <a href='https://www.youtube.com/watch?v=7wnove7K-ZQ&list=PLu0W_9lII9agwh1XjRt242xIpHhPT2llg'>
+              <a href='https://www.youtube.com/watch?v=7wnove7K-ZQ&list=PLu0W_9lII9agwh1XjRt242xIpHhPT2llg' target="_blank">
                 <img
                   className='lg:h-48 md:h-36 w-full object-cover object-center fitImg'
                   src='https://i3.ytimg.com/vi/7wnove7K-ZQ/maxresdefault.jpg'
@@ -271,6 +276,7 @@ function CodingSlide() {
                   <a
                     href='https://www.youtube.com/watch?v=7wnove7K-ZQ&list=PLu0W_9lII9agwh1XjRt242xIpHhPT2llg'
                     className='text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0'
+                    target="_blank"
                   >
                     <div className="flex gap-1">
                     <p>Learn More</p>
@@ -290,7 +296,7 @@ function CodingSlide() {
             data-aos-delay='10'
           >
             <div className='h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden Free_course_card'>
-              <a href='https://www.youtube.com/watch?v=yRpLlJmRo2w&list=PLfqMhTWNBTe3LtFWcvwpqTkUSlB32kJop'>
+              <a href='https://www.youtube.com/watch?v=yRpLlJmRo2w&list=PLfqMhTWNBTe3LtFWcvwpqTkUSlB32kJop' target="_blank">
                 <img
                   className='lg:h-48 md:h-36 w-full object-cover object-center fitImg'
                   src='https://i3.ytimg.com/vi/yRpLlJmRo2w/maxresdefault.jpg'
@@ -310,6 +316,7 @@ function CodingSlide() {
                   <a
                     href='https://www.youtube.com/watch?v=yRpLlJmRo2w&list=PLfqMhTWNBTe3LtFWcvwpqTkUSlB32kJop'
                     className='text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0'
+                    target="_blank"
                   >
                     <div className="flex gap-1">
                     <p>Learn More</p>
