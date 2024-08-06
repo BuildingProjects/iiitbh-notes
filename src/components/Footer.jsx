@@ -46,16 +46,16 @@ function Footer() {
                 <ul className='text-white font-medium'>
                   <li className='mb-4'>
                     <a
-                      href='https://github.com/BuildingProjects/iiitbh-notes'
+                      href='https://www.instagram.com/iiitbh_notes/'
                       className='hover:underline'
                       target='_blank'
                     >
-                      GitHub
+                      Instagram
                     </a>
                   </li>
                   <li>
                     <a
-                      href='https://www.linkedin.com/in/roshan2003/'
+                      href='https://t.me/+8EGaWV-IdekwYjk9'
                       className='hover:underline'
                       target='_blank'
                     >
@@ -87,21 +87,20 @@ function Footer() {
             </div>
           </div>
           <hr className='my-6 border-white sm:mx-auto lg:my-8' />
-          <div className='sm:flex sm:items-center sm:justify-between'>
-            <div className='flex justify-center'>
-              <span className='text-2xl text-white sm:text-center'>
-                ©{currentYear}{" "}
-                <a href='/' className='hover:underline'>
-                  IIITBH NOTES™
-                </a>
-                . All Rights Reserved.
-              </span>
-            </div>
-            <div
-              className='flex mt-4 justify-center gap-3
-            '
-            >
-              <a href='#' className='text-white hover:text-gray-900 ms-5'>
+          <div className='sm:flex sm:items-center  sm:justify-between '>
+            <span className='text-2xl text-white sm:text-center'>
+              ©{currentYear}{" "}
+              <a href='/' className='hover:underline'>
+                IIITBH NOTES™
+              </a>
+              . All Rights Reserved.
+            </span>
+            <div className='flex mt-4 sm:justify-center sm:mt-0 '>
+              <a
+                href='https://www.instagram.com/iiitbh_notes/'
+                className='text-white hover:text-gray-900  ms-5'
+                target='_blank'
+              >
                 <svg
                   className='w-6 h-6'
                   aria-hidden='true'
@@ -109,28 +108,21 @@ function Footer() {
                   fill='currentColor'
                   viewBox='0 0 24 24'
                 >
-                  <path d='M18.77 7.46H13.51V3.88h-3.85v3.58H6.1v2.04h11.67V24h2.04V9.5Z' />
-                </svg>
-                <span className='sr-only'>Instagram</span>
-              </a>
-              <a href='#' className='text-white hover:text-gray-900  ms-5'>
-                {/* <svg
-                  className='w-6 h-6'
-                  aria-hidden='true'
-                  xmlns='http://www.w3.org/2000/svg'
-                  fill='currentColor'
-                  viewBox='0 0 20 17'
-                >
                   <path
                     fill-rule='evenodd'
-                    d='M20 1.892a8.178 8.178 0 0 1-2.355.635 4.074 4.074 0 0 0 1.8-2.235 8.344 8.344 0 0 1-2.605.98A4.13 4.13 0 0 0 13.85 0a4.068 4.068 0 0 0-4.1 4.038 4 4 0 0 0 .105.919A11.705 11.705 0 0 1 1.4.734a4.006 4.006 0 0 0 1.268 5.392 4.165 4.165 0 0 1-1.859-.5v.05A4.057 4.057 0 0 0 4.1 9.635a4.19 4.19 0 0 1-1.856.07 4.108 4.108 0 0 0 3.831 2.807A8.36 8.36 0 0 1 0 14.184 11.732 11.732 0 0 0 6.291 16 11.502 11.502 0 0 0 17.964 4.5c0-.177 0-.35-.012-.523A8.143 8.143 0 0 0 20 1.892Z'
+                    d='M12 2.162c3.26 0 3.63.012 4.91.071a6.942 6.942 0 0 1 2.2.46 4.293 4.293 0 0 1 2.804 2.804 6.94 6.94 0 0 1 .46 2.2c.059 1.28.071 1.65.071 4.91s-.012 3.63-.071 4.91a6.94 6.94 0 0 1-.46 2.2 4.293 4.293 0 0 1-2.804 2.804 6.942 6.942 0 0 1-2.2.46c-1.28.059-1.65.071-4.91.071s-3.63-.012-4.91-.071a6.942 6.942 0 0 1-2.2-.46 4.293 4.293 0 0 1-2.804-2.804 6.94 6.94 0 0 1-.46-2.2C2.174 15.01 2.162 14.64 2.162 12s.012-3.63.071-4.91a6.94 6.94 0 0 1 .46-2.2A4.293 4.293 0 0 1 5.237 4.75a6.942 6.942 0 0 1 2.2-.46c1.28-.059 1.65-.071 4.91-.071zM12 0C8.741 0 8.33.012 7.06.07a9.934 9.934 0 0 0-3.114.655 6.716 6.716 0 0 0-4.356 4.356A9.934 9.934 0 0 0 0 7.06C.012 8.33 0 8.741 0 12s.012 3.63.071 4.91a9.934 9.934 0 0 0 .655 3.114 6.716 6.716 0 0 0 4.356 4.356 9.934 9.934 0 0 0 3.114.655C8.33 23.988 8.741 24 12 24s3.63-.012 4.91-.071a9.934 9.934 0 0 0 3.114-.655 6.716 6.716 0 0 0 4.356-4.356 9.934 9.934 0 0 0 .655-3.114C24.012 15.63 24 15.22 24 12s-.012-3.63-.071-4.91a9.934 9.934 0 0 0-.655-3.114 6.716 6.716 0 0 0-4.356-4.356A9.934 9.934 0 0 0 16.91.07C15.63.012 15.22 0 12 0zM12 5.84a6.16 6.16 0 1 0 0 12.32A6.16 6.16 0 0 0 12 5.84zm0 10.06a3.9 3.9 0 1 1 0-7.8 3.9 3.9 0 0 1 0 7.8zm4.48-8.56a1.308 1.308 0 1 1-2.617 0 1.308 1.308 0 0 1 2.617 0z'
                     clip-rule='evenodd'
                   />
-                </svg> */}
-                
-                <span className='sr-only'>Telegram</span>
+                </svg>
+
+                <span className='sr-only'>Instagram</span>
               </a>
-              <a href='#' className='text-white hover:text-gray-900 ms-5'>
+
+              <a
+                href='https://github.com/BuildingProjects/iiitbh-notes'
+                className='text-white hover:text-gray-900 ms-5'
+                target='_blank'
+              >
                 <svg
                   className='w-6 h-6'
                   aria-hidden='true'
@@ -148,13 +140,11 @@ function Footer() {
               </a>
             </div>
           </div>
-          <div className='flex justify-center'>
-            <a href='/About'>
-              <div className='sm:text-center flex flex-col justify-center text-left text-white font-extrabold text-4xl pt-5 hover:text-gray-900 ms-5'>
-                Made By : Ankur & Roshan
-              </div>
-            </a>
-          </div>
+          <a href='/About'>
+            <div className='sm:text-center flex flex-col justify-center text-left text-white font-extrabold text-4xl pt-5 hover:text-gray-900 ms-5'>
+              Made By : Ankur & Roshan
+            </div>
+          </a>
         </div>
       </footer>
     </div>
