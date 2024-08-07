@@ -9,13 +9,15 @@ function ContactUs() {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
-  const sendEmail = async () => {
+  const sendEmail = async (event) => {
+    event.preventDefault();
     let dataSend = {
       name: name,
       email: email,
       message: message,
     };
-    const baseUrl = "https://iiitbhnotes-backend.onrender.com";
+    //console.log(dataSend);
+    const baseUrl = "https://iiitbh-notes-backend.onrender.com";
     // const baseUrl = "http://localhost:8000";
     const res = await fetch(`${baseUrl}/Contact/sendEmail`, {
       method: "POST",
@@ -25,12 +27,17 @@ function ContactUs() {
         "Content-Type": "application/json",
       },
     })
+      .then((res) => res.json())
       // HANDLING ERRORS
       .then((res) => {
+        alert("Success");
         console.log(res);
         if (res.status > 199 && res.status < 300) {
           alert("Send Successfully !");
         }
+      })
+      .catch((error) => {
+        alert("Error");
       });
   };
 

@@ -6,11 +6,11 @@ const app = express();
 dotenv.config();
 
 const cors = require("cors");
-const corsOptions = {
-  origin: "*",
-  credentials: true,
-  optionSuccessStatus: 200,
-};
+// const corsOptions = {
+//   origin: "*",
+//   credentials: true,
+//   optionSuccessStatus: 200,
+// };
 
 app.use(cors());
 app.use(express.json());
