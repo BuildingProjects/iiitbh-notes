@@ -15,7 +15,8 @@ function ContactUs() {
       email: email,
       message: message,
     };
-    const baseUrl = "http://localhost:8000";
+    const baseUrl = "https://iiitbhnotes-backend.onrender.com";
+    // const baseUrl = "http://localhost:8000";
     const res = await fetch(`${baseUrl}/Contact/sendEmail`, {
       method: "POST",
       body: JSON.stringify(dataSend),

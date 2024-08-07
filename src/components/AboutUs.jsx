@@ -61,7 +61,7 @@ function AboutUs() {
                 <img
                   class='w-full rounded-lg sm:rounded-none sm:rounded-l-lg'
                   src='https://res.cloudinary.com/dkubie3gi/image/upload/v1722947214/ankur_v8ty3m.png'
-                  alt='Sofia Avatar'
+                  alt='Ankur Dwivedi'
                 />
               </a>
               <div class='p-5'>
@@ -231,7 +231,7 @@ function AboutUs() {
                 <img
                   class='w-full rounded-lg sm:rounded-none sm:rounded-l-lg'
                   src='https://res.cloudinary.com/dkubie3gi/image/upload/v1722947223/roshan_kpblet.png'
-                  alt='Sofia Avatar'
+                  alt='Roshan'
                 />
               </a>
               <div class='p-5'>
