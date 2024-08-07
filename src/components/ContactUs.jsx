@@ -3,13 +3,14 @@ import React, { useState } from "react";
 import contactAnimation from "../assets/ContactAnimation.json";
 import FollowUs from "./FollowUs";
 import axios from "axios";
-
+import spinner from "../assets/spinnig.json";
 function ContactUs() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
-
+  const [Loading, setLoading] = useState(false);
   const sendEmail = async (event) => {
+    setLoading(true);
     event.preventDefault();
     let dataSend = {
       name: name,
@@ -17,8 +18,8 @@ function ContactUs() {
       message: message,
     };
     //console.log(dataSend);
-    const baseUrl = "https://iiitbh-notes-backend.onrender.com";
-    // const baseUrl = "http://localhost:8000";
+    // const baseUrl = "https://iiitbh-notes-backend.onrender.com";
+    const baseUrl = "http://localhost:8000";
     const res = await fetch(`${baseUrl}/Contact/sendEmail`, {
       method: "POST",
       body: JSON.stringify(dataSend),
@@ -39,6 +40,10 @@ function ContactUs() {
       .catch((error) => {
         alert("Error");
       });
+    setName("");
+    setEmail("");
+    setMessage("");
+    setLoading(false);
   };
 
   return (
@@ -82,7 +87,7 @@ function ContactUs() {
                 type='email'
                 id='email'
                 className='shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light'
-                placeholder='name@flowbite.com'
+                placeholder='Example@gmail.com'
                 required
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
@@ -128,13 +133,21 @@ function ContactUs() {
               </label>
             </div>
             <div className='flex justify-center'>
-              <button
-                type='submit'
-                className='text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-[1.5rem] px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800
-              w-[9rem]'
-              >
-                Submit
-              </button>
+              {Loading ? (
+                <Lottie
+                  className='w-[16rem] mt-[-3rem]'
+                  loop={true}
+                  animationData={spinner}
+                />
+              ) : (
+                <button
+                  type='submit'
+                  className='text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-[1.5rem] px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800
+                w-[9rem]'
+                >
+                  Submit
+                </button>
+              )}
             </div>
           </form>
         </div>
