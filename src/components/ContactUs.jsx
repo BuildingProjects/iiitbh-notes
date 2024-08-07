@@ -18,8 +18,8 @@ function ContactUs() {
       message: message,
     };
     //console.log(dataSend);
-    // const baseUrl = "https://iiitbh-notes-backend.onrender.com";
-    const baseUrl = "http://localhost:8000";
+    const baseUrl = "https://iiitbh-notes-backend.onrender.com";
+    // const baseUrl = "http://localhost:8000";
     const res = await fetch(`${baseUrl}/Contact/sendEmail`, {
       method: "POST",
       body: JSON.stringify(dataSend),
