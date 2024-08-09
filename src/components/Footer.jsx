@@ -12,7 +12,7 @@ function Footer() {
             <div className='mb-[3.5rem] md:mb-0'>
               <a href='#home' className='flex items-center'>
                 <div className='text-white flex gap-2 hover:'>
-                  <PiBooksDuotone className='size-12 h-[4rem]' />
+                  <PiBooksDuotone className='size-12 h-[4rem] mt-[-0.56rem]' />
                   <a href='/'>
                     <span className='self-center text-4xl font-semibold whitespace-nowrap dark:text-white'>
                       IIITBH NOTES

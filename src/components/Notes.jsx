@@ -49,7 +49,7 @@ function Notes() {
 
   return (
     <>
-      <div className='bg-indigo-800 flex-col items-center h-screen'>
+      <div className='bg-indigo-800 flex-col items-center h-auto md:h-screen '>
         <div>
           <div className='pt-4' onClick={() => setShowLottie(false)}>
             <PopUp onDataSelect={handleDataSelect} />
